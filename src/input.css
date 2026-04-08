@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+IE:wght@100..400&display=swap');
+
+
+.pattern {
+  --s: 140px; /* control the size*/
+  --c1: #000000;
+  --c2: #050505;
+  
+  --_g: #0000 52%,var(--c1) 54% 57%,#0000 59%; 
+  background: 
+   radial-gradient(farthest-side at -33.33% 50%,var(--_g)) 0 calc(var(--s)/2),
+   radial-gradient(farthest-side at 50% 133.33%,var(--_g)) calc(var(--s)/2) 0,
+   radial-gradient(farthest-side at 133.33% 50%,var(--_g)),
+   radial-gradient(farthest-side at 50% -33.33%,var(--_g)),
+   var(--c2);
+  background-size: calc(var(--s)/4.667) var(--s),var(--s) calc(var(--s)/4.667);
+}
+
+@import "tailwindcss";  
+
+
+@theme {
+  /* Define your font family CSS variable */
+  --font-display: "Playwrite IE", cursive;
+  
+}
+@theme {
+  /* Define your font family CSS variable */
+  --font-Inter:"Inter", sans-serif;
+}
+@theme {
+  /* Define your font family CSS variable */
+  
+  --font-Bitcount: "Bitcount Ink", system-ui;
+}
+
+
+
+
+
+
+
+
+
